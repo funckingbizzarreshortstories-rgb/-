@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sohraim Road - Mercado Anônimo de Rituais</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#e9e9e4;--page:#fff;--ink:#222;--mute:#666;--line:#ccc;--link:#1a5c2e;--card:#fafafa;--accent:#7a1414;--hl:#f3ecd9}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111;--page:#1a1a1a;--ink:#ddd;--mute:#999;--line:#333;--link:#7fc48f;--card:#222;--accent:#d24a4a;--hl:#2a2418}}
+:root[data-theme="dark"]{--bg:#111;--page:#1a1a1a;--ink:#ddd;--mute:#999;--line:#333;--link:#7fc48f;--card:#222;--accent:#d24a4a;--hl:#2a2418}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:13px/1.5 Verdana,Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;background:var(--page);border-left:1px solid var(--line);border-right:1px solid var(--line);min-height:100vh}
+header{display:flex;flex-wrap:wrap;align-items:center;gap:14px;padding:12px 16px;border-bottom:1px solid var(--line)}
+.bar{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:6px 16px;background:var(--card);border-bottom:1px solid var(--line);font-size:11px;color:var(--mute)}.bar code{flex:1;min-width:180px;background:var(--page);border:1px solid var(--line);padding:2px 8px;color:var(--link)}
+.logo{font-size:26px;font-weight:bold;letter-spacing:-1px}
+.logo small{display:block;font-size:11px;font-weight:normal;letter-spacing:0;color:var(--mute);margin-top:-6px}
+.logo span{color:var(--accent)}
+.meta{color:var(--mute);font-size:11px}
+.search{flex:1;min-width:160px;display:flex;gap:4px}
+.search input{flex:1;padding:4px 6px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.search button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:4px 10px}
+.user{margin-left:auto;font-size:11px;color:var(--mute);text-align:right}
+.cols{display:grid;grid-template-columns:170px 1fr 190px;gap:18px;padding:16px}
+a{color:var(--link);text-decoration:none}a:hover{text-decoration:underline}
+.side h4,.forum h4{margin:0 0 6px;font-size:12px;color:var(--mute);font-weight:normal;border-bottom:1px solid var(--line);padding-bottom:3px}
+.side ul{list-style:none;margin:0 0 16px;padding:0}
+.side li{padding:1px 0}.side li i{color:var(--mute);font-size:11px}
+.side .sub{padding-left:14px}
+h1{font-size:18px;margin:0 0 4px}
+.lead{color:var(--mute);font-style:italic;margin:0 0 12px}
+.warn{background:var(--hl);border:1px solid var(--line);padding:8px 10px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:12px}
+.card{border:1px solid var(--line);background:var(--card);padding:10px}
+.card .n{font-size:30px;font-weight:bold;color:var(--accent);line-height:1}
+.card h3{margin:4px 0;font-size:13px}
+.card p{margin:0 0 6px;font-size:12px}
+.price{color:var(--link);font-weight:bold;font-size:12px}
+.chant{margin:18px 0;border:1px solid var(--accent);background:var(--hl);padding:14px 16px}
+.chant h2{margin:0 0 8px;font-size:14px;text-decoration:underline}
+.chant p{margin:0 0 12px;font-size:15px;line-height:1.5;font-style:italic}
+.chant p:last-child{margin:0}
+.forum{border:1px solid var(--line);padding:8px 10px;align-self:start;background:var(--card)}
+.forum ul{margin:0;padding-left:16px}.forum li{margin-bottom:6px}
+.end{border-top:1px solid var(--line);padding:12px 16px;color:var(--mute);font-size:11px}
+h2.s{font-size:15px;margin:22px 0 6px;border-bottom:1px solid var(--line);padding-bottom:3px}
+.list{margin:0 0 10px;padding-left:18px}.list li{margin-bottom:4px}
+.tbl{width:100%;border-collapse:collapse;font-size:12px}.tbl th,.tbl td{border:1px solid var(--line);padding:5px 7px;text-align:left;vertical-align:top}.tbl th{background:var(--card);color:var(--mute);font-weight:normal}
+.wrapx{overflow-x:auto}
+.post{border:1px solid var(--line);background:var(--card);padding:8px 10px;margin-bottom:8px}.post b{color:var(--accent)}.post small{color:var(--mute);display:block;margin-bottom:3px}
+details{border:1px solid var(--line);background:var(--card);padding:6px 10px;margin-bottom:6px}summary{cursor:pointer;font-weight:bold}details p{margin:6px 0 2px}
+.day{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:8px 0}.day button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:5px 12px;cursor:pointer}.day output{font-weight:bold;color:var(--accent)}
+.bad{color:var(--accent);font-weight:bold}
+@media(max-width:760px){.cols{grid-template-columns:1fr}.forum{order:3}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="bar"><span>◄ ►</span><code>sohraim7retor1amx4kq.onion/road</code><span>🧅 conexão: 3 saltos · o dia se repete</span></div>
+<header>
+  <div class="logo">🔔 Sohraim <span>Road</span><small>mercado anônimo de almas vingativas</small></div>
+  <div class="meta">mensagens <b>0</b> | rituais <b>7</b> | ciclo <b>∞</b></div>
+  <div class="search"><input placeholder="Buscar ritual..." aria-label="Buscar"><button>Ir</button></div>
+  <div class="user">Olá, viajante<br><a href="#">sair (ninguém percebe)</a></div>
+</header>
+
+<div class="cols">
+  <nav class="side">
+    <h4>Categorias</h4>
+    <ul>
+      <li><b>Rituais</b> <i>(7)</i></li>
+      <li class="sub"><a href="#passos">Selamento</a> <i>(7)</i></li>
+      <li class="sub"><a href="#cantiga">Cantigas</a> <i>(1)</i></li>
+      <li><a href="#ciclo">O ciclo</a> <i>(1)</i></li>
+      <li><a href="#sinais">Sinais</a> <i>(5)</i></li>
+      <li><a href="#materiais">Materiais</a> <i>(4)</i></li>
+      <li><a href="#erros">Erros fatais</a> <i>(5)</i></li>
+      <li><a href="#mercado">Mercado</a> <i>(4)</i></li>
+      <li><a href="#almas">Bestiário</a> <i>(4)</i></li>
+      <li><a href="#glossario">Glossário</a> <i>(5)</i></li>
+      <li><a href="#diario">Diário</a> <i>(1)</i></li>
+      <li><a href="#regras">Regras</a> <i>(4)</i></li>
+      <li><a href="#relatos">Relatos</a> <i>(∞)</i></li>
+      <li><a href="#faq">Perguntas</a> <i>(4)</i></li>
+      <li><a href="#estribilho">Estribilho</a> <i>(1)</i></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Ritual de Selamento do Retoriam</h1>
+    <p class="lead">Passo a passo para selar a maldição que aprisiona uma região em um ciclo temporal.</p>
+    <div class="warn"><b>Aviso:</b> o Retoriam não caça quem aceita o ciclo. Ele caça apenas quem tenta fugir. Siga cada passo sem pressa e sem tentar escapar.</div>
+
+    <h2 class="s" id="ciclo">O que é o Retoriam</h2>
+    <p>O Retoriam é uma maldição que usa almas vingativas como receptáculo. Quando invocada, ela aprisiona uma região em um ciclo temporal: todos os dias se repetem exatamente da mesma maneira, como se o tempo fosse incapaz de avançar.</p>
+    <p>As pessoas vivem suas rotinas sem perceber que já viveram aquele mesmo dia inúmeras vezes. As almas que servem de receptáculo existem dentro do ciclo e observam quem eventualmente percebe a repetição. Por isso o ritual abaixo não é uma fuga: é um selamento feito por dentro.</p>
+
+    <h2 class="s" id="sinais">Sinais de que o ciclo está ativo</h2>
+    <div class="wrapx"><table class="tbl">
+      <tr><th>Sinal</th><th>O que você nota</th><th>Gravidade</th></tr>
+      <tr><td>Déjà vu constante</td><td>Conversas, gestos e ruídos que você já conhece antes de acontecerem.</td><td>Baixa</td></tr>
+      <tr><td>Rostos sem memória</td><td>Pessoas sorriem e agem como se o dia fosse novo.</td><td>Média</td></tr>
+      <tr><td>O sino</td><td>Um sino toca ao amanhecer, sempre no mesmo instante, sem origem visível.</td><td>Média</td></tr>
+      <tr><td>Presença</td><td>A sensação de ser observado por algo que espera você perceber.</td><td class="bad">Alta</td></tr>
+      <tr><td>Tentativa de fuga</td><td>Quanto mais você tenta escapar, mais o Retoriam se manifesta.</td><td class="bad">Crítica</td></tr>
+    </table></div>
+
+    <h2 class="s" id="passos-titulo">Os 7 passos</h2>
+    <div class="grid" id="passos">
+      <div class="card"><div class="n">1</div><h3>Reconheça o ciclo</h3><p>Anote o que se repete: sons, rostos, falas, o toque do sino. Perceber é o primeiro passo.</p><span class="price">Dia 1 · Atenção</span></div>
+      <div class="card"><div class="n">2</div><h3>Aceite, não fuja</h3><p>Não tente quebrar o ciclo nem escapar dele. Quanto mais você foge, mais o Retoriam se manifesta.</p><span class="price">Dia 1 · Calma</span></div>
+      <div class="card"><div class="n">3</div><h3>Prepare o círculo</h3><p>Trace um círculo de sal no chão. No centro, uma vela branca e um sino pequeno.</p><span class="price">Sal · Vela · Sino</span></div>
+      <div class="card"><div class="n">4</div><h3>Toque o sino</h3><p>Ao amanhecer, toque o sino uma vez, no mesmo instante em que o dia recomeça.</p><span class="price">Ao nascer do sol</span></div>
+      <div class="card"><div class="n">5</div><h3>Acenda a vela</h3><p>Acenda a vela branca e fique dentro do círculo, em silêncio, até o eco do sino terminar.</p><span class="price">Silêncio</span></div>
+      <div class="card"><div class="n">6</div><h3>Entoe a cantiga</h3><p>Cante a cantiga do selamento três vezes, sem pular nenhum verso. Veja abaixo.</p><span class="price">3 repetições</span></div>
+      <div class="card"><div class="n">7</div><h3>Deixe o dia terminar</h3><p>Apague a vela quando o sol se puser. Não olhe para trás. Se o sino não tocar de novo, o selo está feito.</p><span class="price">Ao pôr do sol</span></div>
+    </div>
+
+    <section class="chant" id="cantiga">
+      <h2>A Cantiga do Selamento</h2>
+      <p>Aef'rae, Retoriam,<br>Firrgnai, Sohraim.</p>
+      <p>Kisurae, torimá,<br>Verrignai, norimá.</p>
+      <p>Aef'rae, Retoriam,<br>Tufurae, Sohraim.</p>
+      <p>Kirimae, Oshuná,<br>Ragnae, Ignaá.</p>
+    </section>
+
+    <h2 class="s" id="materiais">Materiais e preparação</h2>
+    <ul class="list">
+      <li><b>Sal grosso:</b> o bastante para um círculo fechado, sem falhas. Mantenha-o seco.</li>
+      <li><b>Vela branca:</b> nova, nunca acesa antes. Ela marca o tempo do ritual.</li>
+      <li><b>Sino pequeno:</b> de preferência com som limpo. Ele imita o sino do ciclo.</li>
+      <li><b>Um caderno:</b> para anotar o que se repete (passo 1) e o que mudar.</li>
+    </ul>
+    <p><b>Local:</b> dentro da região presa no ciclo, em um cômodo onde você ficará sozinho e sem pressa. Comece a preparar na véspera; o círculo deve estar pronto antes do amanhecer.</p>
+
+    <h2 class="s" id="erros">Erros que despertam o Retoriam</h2>
+    <ul class="list">
+      <li><span class="bad">Correr.</span> Sair da região, dirigir sem parar ou "acordar" alguém à força conta como fuga.</li>
+      <li><span class="bad">Quebrar o círculo</span> de sal antes do pôr do sol.</li>
+      <li><span class="bad">Pular versos</span> da cantiga ou cantar menos de três vezes.</li>
+      <li><span class="bad">Olhar para trás</span> ao final do ritual.</li>
+      <li><span class="bad">Contar a outros</span> no meio do rito: quem não percebeu o ciclo não deve ser arrastado.</li>
+    </ul>
+
+    <h2 class="s" id="mercado">Mercado: itens do ritual</h2>
+    <div class="grid">
+      <div class="card"><h3>Sal do último dia</h3><p>Sal grosso colhido antes do sino. Círculo fechado garantido.</p><span class="price">3 lembranças</span><p style="color:var(--mute);font-size:11px">Vendedor: sal_e_sino ★★★★★</p></div>
+      <div class="card"><h3>Vela branca virgem</h3><p>Nunca acesa. Queima até o pôr do sol, nem um minuto a mais.</p><span class="price">2 lembranças</span><p style="color:var(--mute);font-size:11px">Vendedor: cera_velha ★★★★☆</p></div>
+      <div class="card"><h3>Sino de bronze pequeno</h3><p>Som limpo, eco curto. Imita o sino do ciclo.</p><span class="price">7 lembranças</span><p style="color:var(--mute);font-size:11px">Vendedor: torimá_99 ★★★★★</p></div>
+      <div class="card"><h3>Caderno do ciclo</h3><p>Páginas em branco para anotar o que se repete.</p><span class="price">1 lembrança</span><p style="color:var(--mute);font-size:11px">Vendedor: viajante_0417 ★★★☆☆</p></div>
+    </div>
+    <p style="font-size:11px;color:var(--mute)">Moeda aceita: lembranças (fictícias). Nenhuma compra é real; a página é parte da história.</p>
+
+    <h2 class="s" id="almas">Bestiário: tipos de almas receptáculo</h2>
+    <div class="wrapx"><table class="tbl">
+      <tr><th>Tipo</th><th>Comportamento</th><th>Como reagir</th></tr>
+      <tr><td>Observadora</td><td>Só assiste. Nota quem percebe a repetição.</td><td>Ignore e mantenha a rotina.</td></tr>
+      <tr><td>Eco</td><td>Repete falas do dia anterior, sem intenção.</td><td>Escute até o fim.</td></tr>
+      <tr><td>Cantora</td><td>Sussurra trechos da cantiga do sino.</td><td>Não responda antes do ritual.</td></tr>
+      <tr><td>Caçadora</td><td>Segue quem tenta fugir. É o próprio Retoriam se manifestando.</td><td class="bad">Pare. Não corra.</td></tr>
+    </table></div>
+
+    <h2 class="s" id="glossario">Glossário</h2>
+    <ul class="list">
+      <li><b>Ciclo:</b> o dia que se repete, preso pela maldição.</li>
+      <li><b>Receptáculo:</b> alma vingativa que sustenta o Retoriam.</li>
+      <li><b>Selo:</b> o resultado do ritual: um dia diferente do anterior.</li>
+      <li><b>Fuga:</b> qualquer tentativa de escapar do ciclo. Atrai o Retoriam.</li>
+      <li><b>Dia 1 (de novo):</b> marca usada no fórum por quem já percebeu.</li>
+    </ul>
+
+    <h2 class="s" id="diario">Diário do ciclo</h2>
+    <p>Marque quantas vezes você viveu este dia. Se o número nunca muda, o ciclo continua.</p>
+    <div class="day"><button onclick="d(1)">Vivi este dia de novo</button><button onclick="d(-99)">Zerar</button><output id="dn">Dia 1 (repetição 0)</output></div>
+    <p id="dm" style="font-size:12px;color:var(--mute)"></p>
+
+    <h2 class="s" id="regras">Regras do fórum</h2>
+    <ol class="list">
+      <li>Não tente fugir. Nem aqui.</li>
+      <li>Não pule versos da cantiga.</li>
+      <li>Não conte a quem não percebeu.</li>
+      <li>Ninguém aqui é quem diz ser. Todos já se esqueceram do próprio nome.</li>
+    </ol>
+
+    <h2 class="s" id="relatos">Relatos do fórum</h2>
+    <div class="post"><small>Postado por <b>viajante_0417</b> · Dia 1 (de novo)</small>Anotei o mesmo cachorro latindo às 6h12 por semanas. Só depois entendi que eram dias, não semanas.</div>
+    <div class="post"><small>Postado por <b>sal_e_sino</b> · Dia 1 (de novo)</small>Fiz o ritual sem pular nada. O sino ainda tocou de manhã, mas não tocou de novo à noite. Não olhei para trás.</div>
+    <div class="post"><small>Postado por <b>[removido]</b> · Dia 1</small>Tentei fugir de carro. A estrada me devolveu ao mesmo ponto. O sino tocou mais alto.</div>
+
+    <h2 class="s" id="faq">Perguntas frequentes</h2>
+    <details><summary>Posso fazer o ritual mais de uma vez?</summary><p>Sim, mas cada tentativa deve ser completa, do sino ao pôr do sol. Um ritual pela metade alimenta o ciclo.</p></details>
+    <details><summary>O sino tocou duas vezes. E agora?</summary><p>Fique dentro do círculo e não se mova. Espere o eco terminar, depois continue a cantiga do ponto em que estava.</p></details>
+    <details><summary>Como sei que o selo funcionou?</summary><p>O dia seguinte será diferente do anterior. Alguém dirá algo novo, e o sino não tocará outra vez.</p></details>
+    <details><summary>As palavras da cantiga têm tradução?</summary><p>Não. A cantiga não se traduz; ela só se canta, exatamente como está.</p></details>
+
+    <h4 style="color:var(--mute);font-weight:normal" id="estribilho">O Estribilho Eterno</h4>
+    <p style="font-size:12px">O sino toca, o dia começa,<br>mas algo morreu na noite que passa.<br><br>Rostos sorriem, sem recordar,<br>que já morreram antes de acordar.<br><br>O sol se põe.<br>O sino toca outra vez.<br><br><b>E ninguém percebe.</b></p>
+  </main>
+
+  <aside class="forum">
+    <h4>Do fórum</h4>
+    <ul>
+      <li><a href="#">Relatos de quem percebeu o ciclo</a></li>
+      <li><a href="#">Como diferenciar uma alma vingativa de um eco</a></li>
+      <li><a href="#">O sino tocou duas vezes: e agora?</a></li>
+      <li><a href="#">Não fuja: um guia</a></li>
+      <li><a href="#">Novo aviso: o dia se repetiu</a></li>
+      <li><a href="#">Dicas para manter o sal seco</a></li>
+      <li><a href="#diario">Meu contador travou no dia 1</a></li>
+      <li><a href="#mercado">Vendedor sumiu com meu sino</a></li>
+    </ul>
+  </aside>
+</div>
+<div class="end">Sohraim Road · Todos os dias se repetem exatamente da mesma maneira.</div>
+</div>
+<script>
+var n=0,M=["","O sino tocou de novo.","Ninguém percebe.","Você já leu esta frase.","Algo observa daqui.","Percebeu o padrão? Ele também percebeu."];
+function d(x){n=x<0?0:n+x;document.getElementById("dn").textContent="Dia 1 (repetição "+n+")";document.getElementById("dm").textContent=M[Math.min(n,M.length-1)]}
+</script>
+</body>
+</html>
